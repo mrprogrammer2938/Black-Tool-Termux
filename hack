@@ -4,7 +4,10 @@
 import os
 import time
 import subprocess
-import ipapi
+try:
+    import ipapi
+except ImportError:
+    os.system("pip3 install ipapi")
 import sys
 import platform
 try:
