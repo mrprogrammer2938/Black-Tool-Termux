@@ -39,6 +39,11 @@ bash install.sh
 ```
 hack
 ```
+<br>
+
+##### [Black-Tool](https://github.com/mrprogrammer2938/Black-Tool) For Linux <br>
+##### [Black-Tool](https://github.com/mrprogrammer2938/Black-Tool-Windows) For Windows
+<br>
 
 ### [Mr.nope](https://github.com/mrprogrammer2938) Account...
 
