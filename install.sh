@@ -10,7 +10,7 @@ if [ "$PREFIX" = "/data/data/com.termux/files/usr" ]; then
   pkg install python3
   pkg install lolcat
   pkg install figlet
-  cp hack /data/data/com.termux/files/usr
+  cp hack /data/data/com.termux/files/usr/doc
   echo "Installing..., Finish...!"
   echo ""
   exit 1
