@@ -5,6 +5,10 @@
 function main() {
        printf '\033]2;Black-Tool-Termux/Installing\a'
        clear
+       echo "
+------[ Black-Tool Termux ]------
+"
+       sleep 1
        echo "Installing..."
        chmod +x hack
        sleep 2
