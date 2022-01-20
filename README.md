@@ -19,8 +19,11 @@ This code write by [Mr.nope](https://github.com/mrprogrammer2938)
 
 <br>
 <p align="center">
-<img width="47%" src="Scr/Black-Tool-Termux-Scr.jpeg"/>
+<img width="47%" src="./Scr/Black-Tool-Termux-Scr.jpeg"/>
 </p>
+<p>
+ <img src="./Scr/mrprogrammer2938-bird.jpeg" alt="Mrprogrammer2938 Bird" title="Mrprogrammer2938 Bird">
+ </p>
 
 ##### Download Termux
 [Download](https://play.google.com/store/apps/details?id=com.termux)
