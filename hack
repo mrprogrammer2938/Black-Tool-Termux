@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # This code write by Mr.nope
-# Version 1.5.4
+# Version 1.5
 import os
 import time
 import subprocess
@@ -10,15 +10,17 @@ except ImportError:
     os.system("pip3 install ipapi")
 import sys
 import platform
-try:
-    from colorama import Fore,init
-except ImportError:
-    os.system("pip3 install colorama")
-init()
+
 class color:
     line = '\033[4m'
     End = '\033[0m'
-opt = color.line + '\nHack' + Fore.LIGHTWHITE_EX + " ~# " + color.End
+    green = '\033[32m'
+    red = '\033[41m'
+    cyan = '\033[36m'
+    blue = '\033[44m'
+    yellow = '\033[43m'
+
+opt = color.line + '\nHack' + color.line + " ~# " + color.End
 system = platform.uname()[0]
 def cls():
     if system == 'Linux':
@@ -26,19 +28,19 @@ def cls():
     else:
         print("\nPlease, Run This Programm on Linux (Termux) Android !\n")
         sys.exit()
-banner = Fore.GREEN + """
+banner = color.green+ """
 _____ _         _      _____         _ 
 | __  | |___ ___| |_   |_   _|___ ___| | 
 | __ -| | .'|  _| '_|    | | | . | . | |
 |_____|_|__,|___|_,_|    |_| |___|___|_|
-                                        """ + Fore.WHITE
+                                        """ + color.End
 
-banner_ver = Fore.GREEN + """
+banner_ver = color.green+ """
 _____ _         _      _____         _ 
-| __  | |___ ___| |_   |_   _|___ ___| | """ + Fore.RED + "Version: " + Fore.CYAN + "1.5.4" + Fore.GREEN + """
+| __  | |___ ___| |_   |_   _|___ ___| | """ + color.red + "Version: " + color.End + color.cyan + "1.5" + color.green + """
 | __ -| | .'|  _| '_|    | | | . | . | |
 |_____|_|__,|___|_,_|    |_| |___|___|_|
-                                        """ + Fore.WHITE
+                                        """ + color.End
 def black():
     os.system("printf '\033]2;Black-Tool\a'")
     cls()
@@ -83,13 +85,13 @@ def list():
         black()
     else:
         cls()
-        print(choose + Fore.RED + " Not Found!" + color.End)
+        print(choose + color.red + " Not Found!" + color.End)
         try1()
 def webhacking():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Web Hacking")
-    print(Fore.WHITE)
+    print(color.End)
     print("\n{1}.brute-Force")
     print("{2}.bruteX")
     print("{3}.Brute-Boom")
@@ -126,7 +128,7 @@ def webhacking():
         black()
 def wirless_Attack():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Wirless Attack")
     print(color.End)
     print("\n{1}.wifite")
@@ -161,7 +163,7 @@ def wirless_Attack():
         wirless_Attack()
 def Phishing():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Phishing")
     print(color.End)
     print("\n{1}.setoolkit")
@@ -202,9 +204,9 @@ def Phishing():
         Phishing()
 def DDos_Attack():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet DDos Attack")
-    print(Fore.WHITE)
+    print(color.End)
     print("\n{1}.DDos-Attack")
     print("{2}.hammer")
     print("{3}.Liteddos")
@@ -238,7 +240,7 @@ def DDos_Attack():
         DDos_Attack()
 def webinfo():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Web Info")
     print(color.End)
     print("\n{1}.Web-Info")
@@ -274,7 +276,7 @@ def webinfo():
         webinfo()
 def soial_Enginner():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet social Engineer")
     print(color.End)
     print("\n{1}.setoolkit")
@@ -305,7 +307,7 @@ def soial_Enginner():
         soial_Enginner()
 def camhack():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Cam Hacking")
     print(color.End)
     print("\n{1}.Cam-Hackers")
@@ -342,11 +344,11 @@ def camhack():
 def developer():
     cls()
     os.system("figlet -f slant Black-Tool | lolcat")
-    print(Fore.RED + "\nThis Programm write by " + Fore.GREEN + "Mr.nope" + Fore.WHITE)
+    print(color.red + "\nThis Programm write by " + color.green+ "Mr.nope" + color.End)
     time.sleep(0.50)
-    print(Fore.BLUE + "\nVersion: " + Fore.CYAN + "1.5.4" + Fore.WHITE)
+    print(color.blue+ "\nVersion: " + color.cyan + "1.5" + color.End)
     time.sleep(0.25)
-    print(Fore.YELLOW + "\nGithub: " + color.line + "https://github.com/mrprogrammer2938" + color.End)
+    print(color.yellow + "\nGithub: " + color.line + "https://github.com/mrprogrammer2938" + color.End)
     time.sleep(0.25)
     try1()
 def black_Tool_Installing():
@@ -356,12 +358,12 @@ def black_Tool_Installing():
     print("--------------------------------\n")
     print(install)
     print("\n------------------------------\n")
-    print(Fore.GREEN + "Black-Tool Installed!" + color.End)
+    print(color.green+ "Black-Tool Installed!" + color.End)
     time.sleep(0.25)
     try1()
 def hacktool():
     cls()
-    print(Fore.BLUE)
+    print(color.blue)
     os.system("figlet Hacking Tools")
     print(color.End)
     print("\n{1}.Hacking-Tools")
@@ -411,7 +413,7 @@ def hacktool():
     else:
         hacktool()
 def try1():
-    try_to_menu1 = input(Fore.WHITE + "\npress Enter..." + color.End)
+    try_to_menu1 = input(color.End + "\npress Enter..." + color.End)
     if try_to_menu1 == '':
         black()
     else:
@@ -472,7 +474,7 @@ def try10():
         wirless_Attack()
 def ext():
     cls()
-    print(Fore.GREEN + "Exiting..." + Fore.WHITE)
+    print(color.green+ "Exiting..." + color.End)
     sys.exit()
 
 # ------------------------------------
